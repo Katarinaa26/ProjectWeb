@@ -177,7 +177,7 @@ section{
     font-size: var(--h2-font);
     font-weight: 800;
     color: #010101;
-    padding-top: 105px;
+    padding-top: 205px;
     padding-bottom: 45px;
 
 
@@ -304,12 +304,12 @@ section{
 }
 
 .formaregistracija p{
-    padding: 15px;
+    padding: 17px;
     
 }
 
 .err{
-    color: rgb(0, 255, 26);
+    color: rgb(255, 0, 0);
 }
 
 .zena_avatar{
@@ -451,6 +451,7 @@ th,td{
         height: 85vh;
     }
 }
+
 
 
 

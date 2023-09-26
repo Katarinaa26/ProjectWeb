@@ -151,102 +151,52 @@
     
 ?>
 
-
-   <section>
-    <div class="center-text">
-        <h2>Registrujte se</h2>
+    <div class="container">
+        <form action="#" method="post">
+            <h2>Registrujte se</h2>
+                <div class="content">
+                    <div class="input-box">
+                        <label for="">Ime:</label>
+                        <input type="text" name="name" placeholder="Unesite ime">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Prezime:</label>
+                        <input type="text" name="surname" placeholder="Unesite prezime">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Korisničko ime:</label>
+                        <input type="text" name="username" placeholder="Unesite korisničko ime">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Email:</label>
+                        <input type="text" name="email" placeholder="Unesite email adresu">
+                    </div>
+                    <div class="input-box">
+                        <label for="">Šifra:</label>
+                        <input type="password" name="password" placeholder="Unesite šifru">
+                        <span class ="err" id="err_password">*<?php echo $passErr?></span>
+                    </div>
+                    <div class="input-box">
+                        <label for="">Potvrdite šifru:</label>
+                        <input type="password" name="re_password" placeholder="Potvrdite šifru">
+                    </div>
+                    <span class="gender-title">Pol:</span>
+                    <div class="gender-category">
+                        <input type="radio" name="gender" id="male">
+                        <label for="">Muški</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="">Ženski</label>
+                    </div>
+                </div>
+                <div class="alert">
+                    <p>Klikom na Registruj se dugme slazete se sa nasim uslovima i <a href="#">politikom privatnosti</a></p>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Registruj se</button>
+                </div>
+        </form>
     </div>
-
-
-    <form class="formaregistracija" action="" method="post">
-
-        <p>
-
-            <label for="">Ime:</label>
-
-            <input type="text" name="name" value="<?php if(isset($name))echo $name?>">
-
-            <span class ="err" id="err_name">* <?php echo $nameErr?> </span>
-
-        </p>
-
-        <p>
-
-            <label for="">Prezime:</label>
-
-            <input type="text" name="surname" id="" value="<?php if(isset($surname))echo $surname?>">
-
-            <span class ="err" id="err_surname">*<?php echo $surnameErr?></span>
-
-
-
-        </p>
-
-        <p>
-
-            <label for="">Pol:</label>
-
-           
-
-            <input type="radio" name="gender" id=""  value="m"  <?php if(isset($gender) && $gender == "m") {echo "checked";} ?> >Male
-
-            <input type="radio" name="gender" id="" value="f" <?php if(isset($gender) && $gender == "f") {echo "checked";} ?> >Female
-
-            <input type="radio" name="gender" id="" value="o" <?php if(!isset($gender) || $gender == "o") {echo "checked";} ?>>Other
-
-           
-
-        </p>
-
-        <p>
-
-            <label for="">Korisničko ime:</label>
-
-            <input type="text" name="username" id="" value="<?php if(isset($username))echo $username?>">
-
-            <span class ="err" id="err_username">*<?php echo $usernameErr?></span>
-
-        </p>
-
-        <p>
-
-            <label for="">Šifra:</label>
-
-            <input type="password" name="password" id="" value="">
-
-            <span class ="err" id="err_password">*<?php echo $passErr?></span>
-
-        </p>
-
-        <p>
-
-            <label for="">Ponovi šifru:</label>
-
-            <input type="password" name="re_password" id="" value="">
-
-            <span class ="err" id="err_repassword">*<?php echo $reErr?></span>
-
-        </p>
-
-        <p>
-
-            <label for="">Email:</label>
-
-            <input type="email" name="email" id="" value="">
-
-            <span class ="err" id="err_email">*<?php echo $emailErr?></span>
-
-        </p>
-
-        <p>
-
-            <input type="submit" value="Registruj se">
-
-        </p>
-
         
-    
-    </form>
   
     <script src="script.js"></script>
 
